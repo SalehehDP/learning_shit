@@ -12,6 +12,7 @@ const user = {
 };
 
 const adminUser = {
-  isAdmin: True,
+  isAdmin: true,
   ...user,
 }; // ... => pull out all key and values
+console.log(adminUser.name);

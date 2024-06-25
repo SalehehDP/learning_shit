@@ -6,7 +6,7 @@ const userName = ["Max", "Amini"];
 const [fisrtName, lastName] = ["Max", "Amini"]; //easy syntax to use for shortened
 // pull out bu position
 
-consol.log(fisrtName);
+console.log(fisrtName);
 
 //Object
 
@@ -29,7 +29,7 @@ const { age: yearsLiveInErath, name: firstName } = {
   name: "azam",
 }; // name should be same as proptosis name in objects
 // pullout by key name ...
-consol.log(firstName);
+console.log(firstName);
 
 //function parameter lists
 /*The destructuring syntax explained in the previous lecture can also be used in function parameter lists.
@@ -44,7 +44,7 @@ function storeOrder(order) {
 }
 //Instead of accessing the order properties via the "dot notation" inside the storeOrder function body, you could use destructuring like this:
 
-function storeOrder({ id, currency }) {
+function storeOrder2({ id, currency }) {
   // destructuring
   localStorage.setItem("id", id);
   localStorage.setItem("currency", currency);
