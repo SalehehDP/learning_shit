@@ -26,3 +26,52 @@ try :
 get another error:
     chown: cannot access '/home/saleheh/.npm': No such file or directory
 * npm run dev
+
+-------------------------------------------------------
+try windows
+* Install winget :
+    https://phoenixnap.com/kb/install-winget
+    getting error : 
+    "This app package is not supported for installation by App Installer because it uses certain restricted capabilities"
+    https://www.makeuseof.com/app-package-not-supported-installation-app-installer/
+    try to install with powershell
+    need two package: 
+    - Microsoft.UI.Xaml.2.8.x64
+    - Microsoft.VCLibs.140.00.UWPDesktop
+    finally , run this commend in powershell :
+    Add-AppxPackage -Path C:\Users\User1\Downloads\Microsoft.DesktopAppInstaller_8wekyb3d8bbwe.msixbundle
+
+    DONE !!!
+*then fallow nodejs doc : source (https://nodejs.org/en/download/package-manager)
+    # installs fnm (Fast Node Manager)
+    **1
+    winget install Schniz.fnm
+    get Error : 
+        "Failed when searching source: msstore"
+    try this commend and works : 
+        winget source remove msstore
+
+    **2
+    # download and install Node.js
+    fnm use --install-if-missing 20
+    get :
+    ←[1;31merror:←[0m ←[31mWe can't find the necessary environment variables to replace the Node version.
+    You should setup your shell profile to evaluate `fnm env`, see https://github.com/Schniz/fnm#shell-setup on how to do this
+    Check out our documentation for more information: https://fnm.vercel.app←[0m
+
+    # verifies the right Node.js version is in the environment
+    node -v # should print `v20.15.0`
+
+    # verifies the right NPM version is in the environment
+    npm -v # should print `10.7.0`
+    
+    GIVEUPPPP 
+
+
+    ---------------------------------------------
+    *try to fallow https://phoenixnap.com/kb/install-node-js-npm-on-windows
+
+    this works Easily . hooo
+
+
+
