@@ -7,6 +7,22 @@ For being able to run project that use / need React i did this steps
     - sudo apt install npm
     check if we are ok 
     - npm --version
+(what is npm : npm is a package manager for the JavaScript programming language )
 
-
-
+* npm install , in project folder
+I get the errer :
+    npm ERR! code EACCES
+    npm ERR! syscall mkdir
+    npm ERR! path /home/saleheh/.npm
+    npm ERR! errno -13
+    npm ERR! 
+    npm ERR! Your cache folder contains root-owned files, due to a bug in
+    npm ERR! previous versions of npm which has since been addressed.
+    npm ERR! 
+    npm ERR! To permanently fix this problem, please run:
+    npm ERR!   sudo chown -R 1000:1000 "/home/saleheh/.npm"
+try :
+    sudo chown -R 1000:1000 "/home/saleheh/.npm"
+get another error:
+    chown: cannot access '/home/saleheh/.npm': No such file or directory
+* npm run dev
