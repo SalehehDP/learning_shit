@@ -42,7 +42,7 @@ try windows
     Add-AppxPackage -Path C:\Users\User1\Downloads\Microsoft.DesktopAppInstaller_8wekyb3d8bbwe.msixbundle
 
     DONE !!!
-*then fallow nodejs doc : source (https://nodejs.org/en/download/package-manager)
+*then follow nodejs doc : source (https://nodejs.org/en/download/package-manager)
     # installs fnm (Fast Node Manager)
     **1
     winget install Schniz.fnm
@@ -65,11 +65,11 @@ try windows
     # verifies the right NPM version is in the environment
     npm -v # should print `10.7.0`
     
-    GIVEUPPPP 
+    GIVE UPPPP  :O
 
 
     ---------------------------------------------
-    *try to fallow https://phoenixnap.com/kb/install-node-js-npm-on-windows
+    *try to follow https://phoenixnap.com/kb/install-node-js-npm-on-windows
 
     this works Easily . hooo
 

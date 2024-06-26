@@ -1,0 +1,9 @@
+*run 
+    - npm install
+
+    //take so longe .....
+    work at the end -> can't believe 
+
+    - npm run dev
+
+    screammmmmmmmmm WORK  *<*
