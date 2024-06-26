@@ -1,0 +1,12 @@
+For being able to run project that use / need React i did this steps 
+
+* Install npm on Ubuntu :
+    use the following command:
+    - sudo apt update
+    - sudo apt install nodejs
+    - sudo apt install npm
+    check if we are ok 
+    - npm --version
+
+
+
