@@ -1,0 +1,10 @@
+Components structure :
+
+*Store component function in speread files 
+having components in same file is a vary rare exception , if two components are super closely related and really only work with each other .
+
+* add components folder to src folder
+have same file .jsx name with component name the export the function component 
+
+// export default ....
+then import the function in app.jsx
