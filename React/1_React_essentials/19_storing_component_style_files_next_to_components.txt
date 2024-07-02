@@ -1,0 +1,13 @@
+*Storing Component Style Files Next To Components
+
+import css file in component funcion file 
+با اینکه به صورت فولدری این استایل در کنار کامونتت خاصی قرار گرفته و در اون فایل ایمپورت شده 
+ولی اگه در جایی دیگه نیز برای سایر المنت ها اپلای شده است .
+
+their are not scope and limited to component 
+
+Soo with all that you can add subfolder with component name 
+- component
+    -- componentName1
+        --- componentName1.jsx
+        --- componentName1.css
