@@ -1,0 +1,18 @@
+<p>Beyond the various ways of setting and extracting props about which you learned in the previous lecture, there are <strong>even more ways of dealing</strong> with props. </p><p>But no worries, you'll see all these different features &amp;&nbsp;syntaxes in action throughout the course!</p><p><strong>Passing a Single Prop Object</strong></p><p>If you got data that's already organized as a JavaScript object, you can pass that object as a single prop value instead of splitting it across multiple props.</p><p>I.e., instead of</p><pre class="prettyprint linenums">&lt;CoreConcept
+  title={CORE_CONCEPTS[0].title}
+  description={CORE_CONCEPTS[0].description}  
+  image={CORE_CONCEPTS[0].image} /&gt;</pre><p>or</p><pre class="prettyprint linenums">&lt;CoreConcept
+  {...CORE_CONCEPTS[0]} /&gt;</pre><p>you could also pass a single <code>concept</code> (or any name of your choice) prop to the <code>CoreConcept</code> component:</p><pre class="prettyprint linenums">&lt;CoreConcept
+  concept={CORE_CONCEPTS[0]} /&gt;</pre><p>In the <code>CoreConcept</code> component, you would then get that one single prop:</p><pre class="prettyprint linenums">export default function CoreConcept({ concept }) {
+  // Use concept.title, concept.description etc.
+  //&nbsp;Or destructure the concept object:&nbsp;const { title, description, image } =&nbsp;concept;
+}</pre><p>It is entirely up to you which syntax &amp;&nbsp;approach you prefer. </p><p><strong>Grouping Received Props Into a Single Object</strong></p><p>You can also pass multiple props to a component and then, in the component function, group them into a single object via JavaScript's <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment#rest_property" rel="noopener noreferrer" target="_blank">"Rest Property"</a> syntax.</p><p>I.e., if a component is used like this:</p><pre class="prettyprint linenums">&lt;CoreConcept
+  title={CORE_CONCEPTS[0].title}
+  description={CORE_CONCEPTS[0].description}  
+  image={CORE_CONCEPTS[0].image} /&gt;</pre><p>You could group the received props into a single object like this:</p><pre class="prettyprint linenums">export default function CoreConcept({ ...concept }) { 
+  //&nbsp;...concept groups multiple values into a single object
+  // Use concept.title, concept.description etc.
+  //&nbsp;Or destructure the concept object:&nbsp;const { title, description, image } =&nbsp;concept;
+}</pre><p>If that syntax is a bit confusing - worry not!&nbsp;You'll also see concrete examples for this syntax (and for why you might want to use it in certain situations)&nbsp;throughout the course!</p><p><strong>Default Prop Values</strong></p><p>Sometimes, you'll build components that may receive an optional prop. For example, a custom <code>Button</code> component may receive a <code>type</code> prop.</p><p>So the Button component should be usable either with a type being set:</p><pre class="prettyprint linenums">&lt;Button type="submit" caption="My Button"&nbsp;/&gt;</pre><p>Or without it:</p><pre class="prettyprint linenums">&lt;Button caption="My Button"&nbsp;/&gt;</pre><p>To make this component work, you might want to set a default value for the <code>type</code> prop - in case it's not passed.</p><p>This can easily be achieved since JavaScript supports default values when using object destructuring:</p><pre class="prettyprint linenums">export default function Button({ caption, type =&nbsp;"submit" })&nbsp;{ 
+  //&nbsp;caption has no default value, type has a default value of "submit"
+}</pre>
