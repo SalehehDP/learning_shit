@@ -1,0 +1,8 @@
+*Add a event listener
+use built-in props in
+on..... => allow you to broad variety of events 
+the value for event prop is a function
+
+How to name : 
+onEventName ={handleEventName}  **onEventName ={handleEventName()} don't add () => executed in wrong time 
+function handleEventName() || function enevtNameHandler() 
