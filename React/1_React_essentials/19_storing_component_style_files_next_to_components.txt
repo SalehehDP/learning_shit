@@ -8,6 +8,6 @@ their are not scope and limited to component
 
 Soo with all that you can add subfolder with component name 
 - component
-    -- componentName1
-        --- componentName1.jsx
-        --- componentName1.css
+    - componentName1
+        - componentName1.jsx
+        - componentName1.css
