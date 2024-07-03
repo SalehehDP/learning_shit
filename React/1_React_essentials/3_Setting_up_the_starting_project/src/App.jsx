@@ -3,8 +3,8 @@ import Header from "./components/Header.jsx";
 import CoreConcepts from "./components/CoreConcepts.jsx";
 import TabButton from "./components/TabButton.jsx";
 
-function handleSelect(){
-  console.log("Hi you select a button ha... shame")
+function handleSelect(selectedButton){
+  console.log("Hi you select a button ha... shame  " + selectedButton)
 }
 
 function App() {
@@ -29,7 +29,7 @@ function App() {
           <h2>Examples</h2>
           <menu>
             <TabButton onSelect={handleSelect}>Components</TabButton>
-            <TabButton>JSX</TabButton>
+            <TabButton onSelect={() => handleSelect('JSX')} >JSX</TabButton>
             <TabButton>Props</TabButton>
             <TabButton>State</TabButton>
           </menu>

@@ -1,0 +1,10 @@
+we want to know wich button was clicked
+
+*define a function that should be exeuted upon an event :
+
+onEvent = {() => handleEvent(argValue)}
+
+
+*but you also want to control how it's going to be and wich argument are going to be passed to it :(use arrow function syntax)
+
+onEvent = {() => handleEvent(argValue)}
