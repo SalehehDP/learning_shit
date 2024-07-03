@@ -1,0 +1,8 @@
+We want to set and update *dynamic contant* ,
+
+1- listen to clicks on our custom button , we want to have  custom onClick props .... this prop will ber forworded to onClick props that's bulit-in
+
+* your props that is related to the event will name *onEvantName*
+
+
+handleEvant just inside of component file would not be enough because from in there we wouldn't access to copmponent we want to update , set , ....

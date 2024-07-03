@@ -3,6 +3,10 @@ import Header from "./components/Header.jsx";
 import CoreConcepts from "./components/CoreConcepts.jsx";
 import TabButton from "./components/TabButton.jsx";
 
+function handleSelect(){
+  console.log("Hi you select a button ha... shame")
+}
+
 function App() {
   return (
     <div>
@@ -24,12 +28,12 @@ function App() {
         <section id="examples"> 
           <h2>Examples</h2>
           <menu>
-            <TabButton>Components</TabButton>
+            <TabButton onSelect={handleSelect}>Components</TabButton>
             <TabButton>JSX</TabButton>
             <TabButton>Props</TabButton>
             <TabButton>State</TabButton>
           </menu>
-
+          D
         </section>
       </main>
     </div>
