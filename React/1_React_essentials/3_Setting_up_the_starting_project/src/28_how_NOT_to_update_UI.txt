@@ -1,0 +1,9 @@
+change value on handlEvent function dosn't change any UI contant .
+
+* entire JSX code in app will not getting reevaluated so it still only knows the initial value.
+
+React will only exectue a component function once when it's first encountered 
+
+فانکشن ها صدا زده می شوند و کامپونت ها فقط در مکانی که خواسته شده یک بار ازیکیوت می شوند 
+
+STATE is going to be life saver hare ... 
