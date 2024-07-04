@@ -1,15 +1,20 @@
-import {CORE_CONCEPTS} from "./data.js"
+import { useState } from 'react'; //react hook 
+import { CORE_CONCEPTS } from "./data.js"
 import Header from "./components/Header.jsx";
 import CoreConcepts from "./components/CoreConcepts.jsx";
 import TabButton from "./components/TabButton.jsx";
 
-function handleSelect(selectedButton){
-  tabContet = selectedButton;
-  console.log("Hi you select a button ha... shame  " + selectedButton)
-}
 
 function App() {
-  let tabContet = "please click a button"; 
+  const [ selectedTopic , setSelecetedTopic ] = useState("please click a button");
+  
+  function handleSelect(selectedButton){
+    setSelecetedTopic(selectedButton);
+    console.log(selectedTopic);
+    //console.log("Hi you select a button ha... shame  " + selectedButton)
+  }
+  
+  
   return (
     <div>
       <Header />
@@ -30,12 +35,12 @@ function App() {
         <section id="examples"> 
           <h2>Examples</h2>
           <menu>
-            <TabButton onSelect={handleSelect}>Components</TabButton>
+            <TabButton onSelect={() => handleSelect('Components')} >Components</TabButton>
             <TabButton onSelect={() => handleSelect('JSX')} >JSX</TabButton>
-            <TabButton>Props</TabButton>
-            <TabButton>State</TabButton>
+            <TabButton onSelect={() => handleSelect('Props')} >Props</TabButton>
+            <TabButton onSelect={() => handleSelect('State')} >State</TabButton>
           </menu>
-          {tabContet}
+          {selectedTopic}
         </section>
       </main>
     </div>
