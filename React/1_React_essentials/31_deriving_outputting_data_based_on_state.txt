@@ -1,0 +1,4 @@
+const [selectedTopic , setSelecetedTopic] = useState("please click a button");
+
+with "please click a button" be default value and EXAMPLES have no please click a button key we get a error so 
+we insted set default value to "jsx"  => we get no error and see jsx EXAMPLES data in UI
