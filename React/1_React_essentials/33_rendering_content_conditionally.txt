@@ -1,0 +1,39 @@
+*output some content conditionally 
+
+! need to do alot in React 
+
+** there are different approaches : 
+
+    - {} , use ternary expression **?** 
+
+        {selectedTopic === undefined} === {!selectedTopic} // if it's not truthy
+
+        {!selectedTopic ? ---- : ++++ }   
+        ===
+        if !selectedTopic {
+            show ----
+        }else {
+            show ++++
+        }
+
+        {selectedTopic !== undefined} === {selectedTopic}  // if it's truthy
+    
+
+        => use two opposite conditions with else null , can be merge in to one if
+
+    -  && , the AND operator 
+
+        it will actuallly output the value comes after it if the condition in front of it yields true 
+
+        {!selectedTopic && ----}   
+        in this case we use two conditions => can lead tomore readable code 
+
+
+    - use a variable 
+        let tabContent = (some JSX code); 
+
+        if (selectedTopic){
+            tabContent = (some new JSX code);
+        }
+
+        => that leads to leaner JSX code 
