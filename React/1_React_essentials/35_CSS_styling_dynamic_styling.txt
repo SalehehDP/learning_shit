@@ -1,0 +1,10 @@
+* Dynamic styling 
+
+    we want to selected tab be highlighted =>
+    setting a class to button that was selected =>
+    className prop (JSX-specific in html is class) =>
+    className = "active" =>
+    now the goal is to set className dynamically
+
+
+    => get another prop *isSelected* , use ternary expression => set attributes conditionally
