@@ -1,0 +1,14 @@
+! if data source change the code will break  (CORE_CONCEPTS list in data.js) 
+
+JSX is capable of dealing with arrays of *renderable* data => arrays of jsx code 
+
+you can transform arrays in javascript with help of .map() 
+
+
+array.map() // inputs : a funtion ,this function will executed for every item in that array
+
+we use .map() => to convert object to html code 
+
+
+getting a Warning: Each child in a list should have a unique "key" prop.
+ to solove : add key prop that uniquely identifies a list item

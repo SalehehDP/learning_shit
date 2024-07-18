@@ -35,6 +35,8 @@ function App() {
         <section id="core-concepts">
           <h2>Core Concepts</h2>
           <ul>
+          {CORE_CONCEPTS.map((conceptsItem) => (
+            <CoreConcepts key={conceptsItem.title} {...conceptsItem} />))}
           <CoreConcepts
             title = {CORE_CONCEPTS[0].title}
             description = {CORE_CONCEPTS[0].description}
