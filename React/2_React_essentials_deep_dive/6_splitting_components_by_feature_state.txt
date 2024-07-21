@@ -1,0 +1,3 @@
+we create a component that has its own feature area.
+
+=> App component be pretty lean is the GOAL. 
