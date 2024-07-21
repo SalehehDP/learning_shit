@@ -1,0 +1,4 @@
+** in the starting project you see that we re-execute the App component but we just nedd to update the exsamples section => we need to split 
+(mananging the state in wrong component)
+
+being able to split up your big components into smaller components and to sperate responsibilities is an important skill fot every React developer
