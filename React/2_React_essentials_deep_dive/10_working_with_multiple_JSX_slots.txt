@@ -1,0 +1,22 @@
+in this video we want to have Tab component =>
+
+something like : 
+<>
+    <menu>
+        BUTTONS
+    </menu>
+    {children}
+</>
+
+=> we need to have additional slot for JSX code 
+
+you can pass JSX code as value whenever you want 
+** whenever you are using JSX code as a value in some place :
+    - the value being returned in component 
+    - a value being stored in a variable 
+    
+    you have to make sure that there's only one *root element* =>
+        - we could add a wrapper around => <div> </div> , <></>
+
+
+=> being able to set multiple slots in component
