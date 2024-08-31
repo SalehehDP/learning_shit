@@ -1,0 +1,13 @@
+
+=> 
+
+we're getting a value out of this input and we're feeding a value back into this input 
+
+if you wanna know how just watch the video again 
+
+[inputValue , setInputValue] = useState(initialValue) ;
+function handleChange(event){
+    setInputValue(event.target.value);
+};
+
+<input value={inputValue} onChange={handleChange}/>

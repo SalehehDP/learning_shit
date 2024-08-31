@@ -9,7 +9,11 @@ export default function Player({name , symbol}){
 
     let playerName = <span className="player-name">{name}</span>;
     if (isEditing) {
-        playerName = <input type="text" required value={name}/>;
+        playerName = <input type="text" required defaultValue={name} onChange={handleChange}/>;
+    }
+
+    function handleChange(event){
+        console.log(event.target.value);
     }
     return <li>
         <span className="player">
