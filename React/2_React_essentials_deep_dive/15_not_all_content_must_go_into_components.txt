@@ -1,0 +1,13 @@
+Not All Content Must Go Into Components
+
+We can add some content in index.html , content that need no state or props and ... .
+
+index.html => visiter see 
+
+Most of yur web application's markup is going to go into your components
+And all of your web application's logic is going in there.
+But *static* markup , data not depend on any data and which does not need to change=>
+put it right in *index.html* file 
+
+
+! any picture in public folder can be use just by name in index.html
