@@ -4,19 +4,19 @@ export default function Player({name , symbol}){
 
     const [ isEditing, setIsEditing ] = useState(false);
     function handleEditClick(){
-        setIsEditing(true);
+        setIsEditing(!isEditing);
     }
 
     let playerName = <span className="player-name">{name}</span>;
     if (isEditing) {
-        playerName = <input type="text" required />;
+        playerName = <input type="text" required value={name}/>;
     }
     return <li>
         <span className="player">
             {playerName}
             <span className="player-symbol">{symbol}</span>
         </span>
-        <button onClick={handleEditClick}>Edit</button>
+        <button onClick={handleEditClick}>{isEditing ? "Save" : "Edit"}</button>
     </li>
 }
 
@@ -24,6 +24,6 @@ export default function Player({name , symbol}){
 
 //(span should have input field , button name should change ,.....) we need somthing cause the UI to update when changed => State 
 
-// dynamic content => extra variable , if eles
+// conditianal content => extra variable , ternary expresion
 
 //Component Instances Work In *Isolation!* , the component use the same logic 
