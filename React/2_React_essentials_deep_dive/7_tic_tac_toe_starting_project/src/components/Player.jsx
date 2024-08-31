@@ -25,3 +25,5 @@ export default function Player({name , symbol}){
 //(span should have input field , button name should change ,.....) we need somthing cause the UI to update when changed => State 
 
 // dynamic content => extra variable , if eles
+
+//Component Instances Work In *Isolation!* , the component use the same logic 
