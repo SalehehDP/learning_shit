@@ -2,3 +2,6 @@
 course name : Udemy_React_The_Complete_Guide_2024_incl_React_Router_Redux_2024_1
 course link : https://downloadly.ir/elearning/video-tutorials/react-16-the-complete-guide-incl-redux-9/
 section 2 -> javascript refresher
+
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals
