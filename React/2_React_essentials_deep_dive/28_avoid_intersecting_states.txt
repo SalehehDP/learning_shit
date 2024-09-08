@@ -1,0 +1,9 @@
+
+
+store X information => in state number 1 
+store X + e information => in state number 2 
+
+delete state number 1 
+
+it's not the end of the world if you start manging the same data with multiple state 
+but it is somthing you typically wanna avoid 
