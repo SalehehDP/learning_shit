@@ -1,0 +1,27 @@
+
+002 CodeSandbox-Starting-Project
+https://codesandbox.io/s/react-essentials-deep-dive-start-2vgd4s
+
+002 Local-Starting-Project
+https://github.com/academind/react-complete-guide-course-resources/blob/main/attachments/04%20Essentials%20Deep%20Dive/01-starting-project.zip
+
+014 Local-Starting-Project
+https://github.com/academind/react-complete-guide-course-resources/blob/main/attachments/04%20Essentials%20Deep%20Dive/07-tic-tac-toe-starting-project.zip
+
+014 CodeSandbox-Starting-Project
+https://codesandbox.io/s/react-essentials-deep-dive-tic-tac-toe-start-pl68cp
+
+017 Local-Starting-Project-Tic-Tac-Toe-
+https://github.com/academind/react-complete-guide-course-resources/blob/main/attachments/04%20Essentials%20Deep%20Dive/07-tic-tac-toe-starting-project.zip
+
+017 CodeSandbox-Starting-Project
+https://codesandbox.io/s/react-essentials-deep-dive-tic-tac-toe-start-pl68cp
+
+026 Reference-vs-Primitive-Values
+https://academind.com/tutorials/reference-vs-primitive-values
+
+031 JS-Template-Literals
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals
+
+034 winning-combinations.js
+https://github.com/academind/react-complete-guide-course-resources/blob/main/attachments/04%20Essentials%20Deep%20Dive/winning-combinations.js
