@@ -1,2 +1,3 @@
 # Learning Shit 
-This repository contains example ,first trials and useful(hopefully) document.
+- Front-end
+This repository contains example ,first trials and useful(hopefully) document about front-end things.
